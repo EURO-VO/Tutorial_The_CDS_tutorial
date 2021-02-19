@@ -56,29 +56,29 @@ Centre de Donn\'ees astronomiques de Strasbourg, France}       % Affiliation
 % mation on which software packages are required. Otherwise the style is free.
 \section{Introduction}
 
-The CDS harbours three major programs, accessible through the CDS portal:\\
+The CDS hosts three major services, accessible through the CDS portal:\\
 \begin{itemize}
 \item \includegraphics[width=0.1 \textwidth]{../images/logo_simbad.png}
 \textbf{\simbad}: The astronomical database \simbad\ contains more than
-8 million objects. For each object it provides basic measurements (type,
+12 million objects. For each object it provides basic measurements (type,
 coordinates, proper motion, radial velocity, spectral type, distance,
 magnitude), cross-correlations and bibliography.
-\item \includegraphics[width=0.08  \textwidth]{../images/logo_vizier.png}
-\textbf{\vizier}: The \vizier\ catalogue service provides access to about
-19,000 catalogues, being the most complete library of published astronomical
+\item \includegraphics[width=0.08 \textwidth]{../images/logo_vizier.png}
+\textbf{\vizier}: The \vizier\ catalogue service provides access to more than
+20,000 catalogues, being the most complete library of published astronomical
 data tables available online.
 \item \includegraphics[width=0.1  \textwidth]{../images/logo_aladin.png}
 \textbf{\aladin}: The interactive sky atlas \aladin\ allows to
 visualize astronomical images and to superimpose entries from different
-catalogues and databases. It allows to visualize \simbad\ and \vizier\
-information and distributed archives and databases as well as to upload own
-tables or images. There are two versions of \aladin: Aladin desktop and Aladin
-lite which runs in the browser.
+catalogues and databases. It allows to visualize data from \simbad, \vizier, and
+from archives and databases distributed around the world. Furthermore, you can
+open your own tables or images. There are two versions of \aladin: Aladin desktop and Aladin
+Lite, which runs in the browser.
 \end{itemize}
 
 In addition, the CDS has been offering a cross-match service
-(X-match \includegraphics[width=0.03
-\textwidth]{../images/logo_cds_xmatch.png} ) since November 2011.
+(X-match \includegraphics[width=0.06
+\textwidth]{../images/logo_xmatch_new.png} ) since November 2011.
 
 \section{Goal of this tutorial}
 
@@ -86,15 +86,14 @@ This tutorial shows how to use the CDS tools to gather information on
 specific astronomical objects. We will:
 \begin{itemize}
 \item Search for information on NGC4039 in the CDS portal
-\item Search for data on NGC4039 in \aladin\
+\item Search for data concerning NGC4039 in \aladin\
 \item Compare the coverage of Sky Surveys and select interacting
 galaxies that have SDSS and GALEX data
 \end{itemize}
 
 \section{Search for information on NGC4039 in the CDS Portal}
 
-Open the CDS Portal
-\hyperref[http://cdsportal.u-strasbg.fr/]{\textcolor{blue}{http://cdsportal.u-strasbg.fr/}}
+Open the \href{http://cdsportal.u-strasbg.fr/}{\textcolor{blue}{CDS Portal}}
 and make a query for `NGC4039'.
 The result provides an overview of the information and data available for
 this object in the 3 CDS services: \simbad, \aladin\ and \vizier:
@@ -112,7 +111,7 @@ Bibliography}
 \begin{figure}[H]
     \center
     \includegraphics[width=1
-    \textwidth]{../images/cdsportal_object-information_ngc4039.jpg}
+    \textwidth]{../images/cdsportal_object-information_ngc4039.png}
     \caption{Result of the query for NGC4039 in the CDS Portal}
     \label{fig:cdsportal2}
 \end{figure}
@@ -123,7 +122,7 @@ information on this object in a new tab.
 \begin{figure}[H]
     \center
     \includegraphics[width=1
-    \textwidth]{../images/simbad_section_basic-data.jpg}
+    \textwidth]{../images/simbad_section_basic-data.png}
     \caption{Result of the query for NGC4039 in \simbad.}
     \label{fig:simbad}
 \end{figure}
@@ -131,7 +130,7 @@ information on this object in a new tab.
 drawn for the literature and are stored in \simbad\ using a
 hierarchical classification scheme. The full list of Object Types can
 be found here:
-\hyperref[http://simbad.u-strasbg.fr/simbad/sim-display?data=otypes]
+\href{http://simbad.u-strasbg.fr/simbad/sim-display?data=otypes}
 {\textcolor{blue}{http://simbad.u-strasbg.fr/simbad/sim-display?data=otypes}}.
 The main Object Type of NGC4039 is \textbf{Galaxy in Pairs of Galaxies
 (GiP)}.
@@ -139,8 +138,7 @@ The main Object Type of NGC4039 is \textbf{Galaxy in Pairs of Galaxies
 \textwidth]{../images/simbad_button_parents.png} to identify the name
 of the galaxy pair. Sorting by the number of references
 \includegraphics[width=0.04  \textwidth]{../images/simbad_sort_references.jpg}
-can help
-bring out the most important ones.
+can help bring out the most important ones.
     \item Follow the link to the \simbad\ entry of the Antennae galaxy pair
 \includegraphics[width=0.07
 \textwidth]{../images/simbad_antennae-galaxt-pair_link.png}. There
@@ -151,12 +149,13 @@ might help to find them.
     \item Visit the \simbad\ entry of the interaction partner of NGC\,4039 and
 use the {\bf References} section to find the earliest listed reference in the
 literature to this object.
+% this would be in 1923 ( 1923ApJ....57..137D )
 \begin{figure}[H]
     \center
     \includegraphics[width=1
-    \textwidth]{../images/simbad_section_references.jpg}
+    \textwidth]{../images/simbad_section_references.png}
     \caption{References section}
-    \label{fig:simbad}
+    \label{fig:simbad_references}
 \end{figure}
 
     \item Return to the CDS portal.
@@ -171,7 +170,7 @@ literature to this object.
 \begin{figure}[H]
 \center
 \includegraphics[width=1
-\textwidth]{../images/cdsportal_image-information_ngc4039.jpg}
+\textwidth]{../images/cdsportal_image-information_ngc4039.png}
 \caption{Result of the query for NGC4039 in the CDS Portal}
 \label{fig:cdsportal3}
 \end{figure}
@@ -181,8 +180,10 @@ literature to this object.
 \item Note that you can zoom in and out by scrolling your mouse when the mouse
 pointer is positioned on top of the images.
 \item Other images can be displayed by selecting them in the left
-column.
-\item Restricted searches on wavelength and resolution are possible by
+column. Select the PanSTARRS DR1 and 2MASS colour images one after another to
+see a higher resolution image and an image at infrared wavelength of the galaxy
+pair.
+\item Filtering on wavelength and resolution is possible by
 ticking/unticking the boxes in that same column.
 \end{itemize}
 
@@ -193,7 +194,7 @@ ticking/unticking the boxes in that same column.
 \begin{figure}[H]
 \center
 \includegraphics[width=1
-\textwidth]{../images/cdsportal_catalogue-information_ngc4039.jpg}
+\textwidth]{../images/cdsportal_catalogue-information_ngc4039.png}
 \caption{Result of the query for NGC4039 in the CDS Portal}
 \label{fig:cdsportal4}
 \end{figure}
@@ -202,19 +203,27 @@ ticking/unticking the boxes in that same column.
 \item The list of catalogues is sorted by \textbf{Popularity} but can
 also be sorted by number of rows (\textbf{\#rows}), \textbf{sky
 fraction} or \textbf{year}.
-\item Note that restrictions and filtering can be applied by clicking
-on the left or right columns according to your wills.
-\item After selecting a catalogue, it is possible to visualize it (either
-quickly or in \vizier), to plot it and/or to send it to the \aladin\
-tool.
+\item Restrictions and filtering can be applied by clicking
+on the left or right columns according to your requirements. How many catalogues
+provide data in the optical for galaxies and come with images as associated data?
+% that would be 2 catalogues
+Now go back to displaying all catalogues available within 0.2\,deg of NGC4039 by
+clicking the
+\includegraphics[width=0.06  \textwidth]{../images/cdsportal_show_all.png} button.
+\item After selecting one catalogue, it is possible to look at it it (either
+quickly \includegraphics[width=0.06  \textwidth]{../images/cdsportal_quickview.png}
+or in \vizier\ \includegraphics[width=0.03 \textwidth]{../images/cdsportal_vizier.png}),
+to plot column values \includegraphics[width=0.05 \textwidth]{../images/cdsportal_plot.png}
+and to send it to \aladin\ (or other SAMP-aware tools like TOPCAT)
+\includegraphics[width=0.03 \textwidth]{../images/cdsportal_samp.png}.
 \begin{figure}[H]
 \center
-\includegraphics[width=1  \textwidth]{../images/cdsportal_table_usno.jpg}
+\includegraphics[width=1 \textwidth]{../images/cdsportal_table_usno.jpg}
 \caption{Selection of a \vizier\ Catalogue on the CDS Portal.}
 \label{fig:cdsportal5}
 \end{figure}
 \item Actually the Antennae is listed in the Arp Atlas of Peculiar
-Galaxies, make a search for `Arp' into the \textbf{Search} box.
+Galaxies, search for this catalogue by typing 'Arp' into the \textbf{Search} box.
 
 \begin{figure}[H]
 \center
@@ -223,14 +232,15 @@ Galaxies, make a search for `Arp' into the \textbf{Search} box.
 \caption{Looking for `Arp' in the \vizier\ catalogues.}
 \label{fig:arp}
 \end{figure}
-\item Note that there are two tables for Webb 1996. Select the
-\textbf{arplist}
+\item There are two tables for Webb 1996. Using the info button
+\includegraphics[width=0.03 \textwidth]{../images/cdsportal_info.png}, you'll
+see that the \textbf{arplist} table contains a list of all galaxies with some
+additional information. Select the \textbf{arplist}
 table by clicking on it and then on \includegraphics[width=0.05
 \textwidth]{../images/logo_vizier.png}. This sends to the \vizier\ detailed
-query
-page.
+query page.
 \item Make a first query on this table by clicking on \textbf{submit}.
-Examine the output as html. Go back to the previous page
+Examine the output as html. Go back to the previous page.
 \item Modify the query preferences to add extra coordinate columns in
 J2000 decimal degrees and to obtain the whole catalogue:
 \begin{itemize}
@@ -242,7 +252,7 @@ J2000 decimal degrees and to obtain the whole catalogue:
     \textbf{decimal} boxes.
     \item Change the maximum (\textbf{max}) number of rows to
     \textbf{unlimited} and tick \textbf{All columns} to get the whole
-    catalogue
+    catalogue.
     \begin{figure}[H]
         \center
         \includegraphics[width=0.2
@@ -258,7 +268,7 @@ might come in handy for other problem sets.
 \begin{itemize}
 \item When satisfied, click on \textbf{Save in CDSportal}, then click
 on the \textbf{Save} button. The file is now saved in your personal
-user space on the CDS portal.\includegraphics[width=0.1
+user space on the CDS portal. \includegraphics[width=0.1
 \textwidth]{../images/vizier_saveto_CDSportal.png}
 \item Click on \textbf{Go to MyData} and download a copy in
 \textbf{VOTable} format on your desktop. This file can be used later
@@ -271,7 +281,7 @@ in the tutorial.
 \end{figure}
 \end{itemize}
 
-\subsection{How does the data get into the CDS databases?}
+\subsection{How do the data get into the CDS databases?}
 As you have seen in the last sections, the CDS databases (\simbad, \vizier, the
 HiPS server for images) host large amounts of a variety of data products. To provide these data to the astronomical community, about 12 data stewards curate the data. This involves collecting
 data from journal papers, receiving data directly from large surveys (such as
@@ -324,19 +334,17 @@ in the main viewing window.
     \item Start by typing "NGC4039" in the \textbf{Command} line
 \includegraphics[width=0.2\textwidth]{../images/aladin_command_ngc4039.png}
 and press \textbf{Enter}. In the main viewing window the coloured DSS image of
-the Antennae galaxies appears. As for the \aladin\ lite window in the CDS
+the Antennae galaxies appears. As for the \aladin\ Lite window in the CDS
 portal you can zoom in and out by scrolling your mouse.
 
     \item Make a contour map of the image using the \textbf{cont} button
 \includegraphics[width=0.03  \textwidth]{../images/aladin_button_contours.png}
-next to main viewing window. Increase the number of contours to better
+next to the main viewing window. Increase the number of contours to better
 represent the image.
 
     \item Overlay a \simbad\ plane showing only the galaxies by selecting
-the \includegraphics[width=0.055  \textwidth]{../images/logo_simbad.png} tab
-in
-the
-\textsc{Server selector} and choosing \textbf{Galaxy} as the \textbf{Display
+the \includegraphics[width=0.055 \textwidth]{../images/logo_simbad.png} tab
+in the \textsc{Server selector} and choosing \textbf{Galaxy} as the \textbf{Display
 filter} (see Figure~\ref{fig:server_selector}).
 
     \item Change the colour of the \simbad\ plane using the button
@@ -361,7 +369,7 @@ the 2MASS colour image entry and the loading window appears (see
 Figure~\ref{fig:aladin_load_2mass}). In the loading window, check that the box
 for progressive loading is ticked \includegraphics[width=0.07
 \textwidth]{../images/aladin_load_progessive.png} and load the image by
-clicking \textbf{Load}  \includegraphics[width=0.07
+clicking \textbf{Load} \includegraphics[width=0.07
 \textwidth]{../images/aladin_load_load.png}.
 
 \begin{figure}[H]
@@ -407,13 +415,14 @@ images in a number of different ways:
         change the order in which the image are shown.
     \end{itemize}
 
-    \item All the colour images we have loaded so far are pre-computed.
-\aladin\ also allows you to compute your own RGB colour images:
+    \item All the colour images we have loaded so far are pre-computed. \aladin\
+    also allows you to compute your own RGB colour images:
      \begin{itemize}
          \item For this task, we need fits images rather than the HiPS tiles we have
          worked with so far. Those fits images may come from your own data or
          from the Virtual Observatory. We will now search and load images at
-         the location of the Antennae galaxies from the VO.
+         the location of the Antennae galaxies from the VO using the simple image
+         access (SIA) protocol.
          \item First, we look for a far-ultraviolet image from
          \textit{GALEX}: Enter "GALEX Atlas of nearby galaxies" in the
          \textbf{Select} line below the
@@ -422,9 +431,8 @@ images in a number of different ways:
          Tree} you will find the entry "GALEX Atlas of nearby galaxies" under
          \textbf{Others} $\rightarrow$ \textbf{SIA (image)} $\rightarrow$
          \textbf{mast.stsci}. Load this entry \textbf{in view}
-         \includegraphics[width=0.07
-         \textwidth]{../images/aladin_load_inview.png}. A table appears in the
-         stack.
+         \includegraphics[width=0.07 \textwidth]{../images/aladin_load_inview.png}.
+         A table appears in the stack.
          \item The newly loaded table contains a row for every image available
          from this image service in the vicinity of NGC\,4039. Find the entry
          for the file "h\_ngc4038-fd-int.fits.gz" and click on the URL in the
@@ -441,17 +449,25 @@ images in a number of different ways:
          \item Next, we are after an infrared image: search for "2MASS large
          galaxy atlas" in the \textbf{Select} line, load the table from
          \textbf{Others} $\rightarrow$ \textbf{SIA (image)} $\rightarrow$
-         \textbf{irsa.ipac} and select any one of the three entries in the
+         \textbf{irsa.ipac} $\rightarrow$ \textbf{2MASS Large Galaxy Atlas}
+         and select any one of the three entries in the
          table to load into the stack.
          \item Finally let's add an X-ray image to the collection: search for
-         "XMM-Newton Pointed" in the \textbf{Select} line, load the table from
+         "Chandra X-ray Observatory" in the \textbf{Select} line. There will be
+         two services available, we will want to use the SIA service. Load the
+         table "in view" from
          \textbf{Others} $\rightarrow$ \textbf{SIA (image)} $\rightarrow$
-         \textbf{esavo} and select the observation with the longest "Duration".
+         \textbf{cxc.harvard.edu} $\rightarrow$
+         \textbf{Chandra X-ray Observatory Data Archive} and select one of the
+         observations with the longest "exptime".
          \item To create the RGB image, open the \textbf{RGB image generator}
          with \includegraphics[width=0.04
          \textwidth]{../images/aladin_button_rgb.png} (see
          Figure~\ref{fig:aladin_rgb_generator}). Enter the images you want to
-         use for each colour component and click \textbf{CREATE}.
+         use for each colour component and click \textbf{CREATE}. If you want
+         to adjust flux scale and transfer function of the individual images, use
+         the \textbf{pixel} \includegraphics[width=0.04
+         \textwidth]{../images/aladin_button_pixel.png} menu.
      \end{itemize}
 
 \begin{figure}[H]
@@ -512,17 +528,16 @@ images in a number of different ways:
 galaxies that have SDSS and GALEX data}
 
 Many large sky surveys in \aladin\ are stored in the \textbf{HiPS} format
-(Hierarchical Progressive Survey, see
-\hyperref[http://aladin.u-strasbg.fr/hips/]{\textcolor{blue}
-	{http://aladin.u-strasbg.fr/hips/}}),
+(\href{http://aladin.u-strasbg.fr/hips/}{\textcolor{blue}
+	{Hierarchical Progressive Survey}}),
 which allows for easy access, browsing and visualisation of image and catalogue
 data. To describe (non-trivially shaped) regions on the sky \textbf{MOC}
 (Multi-Order Coverage) maps are used. In the following, we will make use of the
 advantages of these two data structures to easily asses which galaxies in the
 Arp catalogue of peculiar galaxies have been observed by SDSS and GALEX. If you
 would like to have an overview of currently available HiPS, have a look at
-\hyperref[https://aladin.u-strasbg.fr/hips/list]{\textcolor{blue}
-	{https://aladin.u-strasbg.fr/hips/list}}. You can load any of them in
+\href{https://aladin.u-strasbg.fr/hips/list}{\textcolor{blue}
+	{this list}}. You can load any of them in
 \aladin\ by entering their base URL in the \textbf{Command} line.
 
 \begin{itemize}
@@ -544,7 +559,7 @@ the moment make the two MOC planes invisible by clicking on their opacity slider
 \end{figure}
 
     \item Turn on the coordinate \textbf{grid}
-\includegraphics[width=0.035\textwidth]{../images/aladin_button_grid.jpg}, zoom
+\includegraphics[width=0.035\textwidth]{../images/aladin_button_grid.png}, zoom
 out and use
 the \textbf{pan} tool
 \includegraphics[width=0.035\textwidth]{../images/aladin_button_pan.png} to
@@ -562,7 +577,7 @@ right of the main viewing window.
 
 \begin{figure}[H]
 \center
-\includegraphics[width=0.4 \textwidth]{../images/aladin_moc_intersection.jpg}
+\includegraphics[width=0.4 \textwidth]{../images/aladin_moc_intersection.png}
 \caption{Building the intersection of the coverage maps}
 \label{fig:intersec}
 \end{figure}
@@ -579,8 +594,10 @@ can do this in one of the following three ways:
         or \includegraphics[width=0.035\textwidth]
         {../images/cdsportal_button_broadcast.png} respectively and allow the
         browser to connect to the SAMP hub. For \vizier\ you additionally have
-        to click on the newly appeared grey \textbf{Broadcast} button. Now the
-        data appears in \aladin.
+        to click on the newly appeared grey \textbf{Broadcast} button and in
+        your \textbf{MyData} area of the CDS Portal you might have to click the
+        same broadcast button again after granting your browser permission to
+        connect to the SAMP hub. Now the data appears in \aladin.
     \end{itemize}
 Alternatively you can download the catalogue from \vizier\ through the
 \textsc{Data Tree}, enter "Arp Webb" in the \textbf{Select} line below the
@@ -589,7 +606,8 @@ Alternatively you can download the catalogue from \vizier\ through the
 
     \item Filter the catalogue to select only the sources that fall within
 the SDSS+GALEX MOC: \textbf{Coverage $\rightarrow$ Filter a table by
-MOC...}: 425 sources are selected. You can find the number for example in the
+MOC...}: a new catalogue plane appears and the filtered catalogue contains 425
+sources. You can find the number for example in the
 little information text that appears on the top of the stack when hovering the
 mouse over an entry in the stack. Note that you can also filter a table by MOC
 \includegraphics[width=0.09\textwidth]{../images/aladin_load_byMOC.png}
@@ -597,7 +615,7 @@ when loading the table initially (instead of loading the entire table).
 \begin{figure}[H]
 \center
 \includegraphics[width=0.4
-\textwidth]{../images/aladin_moc_filter-tab-by-moc.jpg}
+\textwidth]{../images/aladin_moc_filter-tab-by-moc.png}
 \caption{Filtering a catalogue by a MOC}
 \label{fig:filtermoc}
 \end{figure}
@@ -623,7 +641,7 @@ sources by extracting small images from the SDSS survey:
     \end{itemize}
 \begin{figure}[H]
 \center
-\includegraphics[width=0.4 \textwidth]{../images/aladin_filter_mag.jpg}
+\includegraphics[width=0.4 \textwidth]{../images/aladin_filter_mag.png}
 \caption{Filtering a catalogue by magnitude}
 \label{fig:filtermag}
 \end{figure}
@@ -637,7 +655,8 @@ $\rightarrow$ Thumbnail view generator...}, set the thumbnail size to
 \label{fig:thumbnails}
 \end{figure}
 \end{itemize}
-
+This time we keep some of the planes that we created. In particular, please do
+not clean away the table of the seven brightest galaxies.
 
 \section{Automation [Optional]}
 When samples become larger, it is useful to automate some tasks. In this
@@ -657,19 +676,19 @@ observation log overlays for each of the selected bright galaxies.
     \item Create a folder called `Arp' and edit the script Arp\_script.ajs to
     insert a path in order to save the output files, e.g. $\sim$/Desktop/Arp.
     \item Open the \aladin\ macro controller and load the script:\\
-    - \textbf{Tools $\rightarrow$ Macro Controller} then \textbf{File
+    - \textbf{Tool $\rightarrow$ Macro Controller} then \textbf{File
     $\rightarrow$ Load script}\\
     - or cut and paste the script into the top panel of the \textsc{Macros}
     window.
-    \item Select all the sources in the bright galaxy catalog:\\
+    \item Select the table with the seven brightest sources from the peculiar
+    galaxy catalogue:\\
     - Right click on the plane and \textbf{Select all objects in the selected
     planes}\\
     - In the \textsc{Macros} window: \textbf{File $\rightarrow$ Use selected
     plane sources as params}.\\
     - Note how the catalogue columns are shown as parameters which can be
     referred to as \$1, \$2, etc within the script.
-    \item Click on the first row of the parameters table and execute the
-script
+    \item Click on the first row of the parameters table and execute the script
     for this row: \textbf{Exec current params}.
     \item Optional: add an SDSS image: remove the `\#' to enable download of a
     SDSS g-band image for each source. Note that this results in an
@@ -678,7 +697,7 @@ script
     \item Inspect the output in the \aladin\ window and also the files written
     in the Arp folder.
     \item Execute the script for all sources: \textbf{Exec all from current}.
-    \item Note that the saved stack files can simply be dragged and dropped
+    \item Note that the saved stack files ($\ast$\_stack.aj) can simply be dragged and dropped
     into \aladin\ for inspection.
 \end{itemize}
 This is the script:
@@ -728,10 +747,15 @@ available through Python. To explore some of the features that Python can
 provide today, a Jupyter notebook was prepared. These notebooks allow
 interactive execution of Python code. Go now to\\
 \url{https://mybinder.org/v2/gh/cds-astro/tutorials/master?filepath=Notebooks}\\
-and wait a moment for everything. Click on the link to
+and wait a moment for everything to load. Click on the link to
 
-\textbf{The_CDS_tutorial.ipynb}
+\textbf{The\_CDS\_tutorial.ipynb} or \textbf{The\_CDS\_tutorial\_extended.ipynb}
 
-and follow the instructions there. You can also download the Jupyter notebook from github repository to your machine. It was created to run with the packages as listed in the requirements.txt file. Using pip\footnote{\url{https://pip.pypa.io/en/stable/}} you can install all these packages with the command \texttt{pip install [name of the package]}.
+\noindent and follow the instructions there. You can also download the Jupyter
+notebook from github repository to your machine. It was created to run with the
+packages as listed in the requirements.txt file. Using
+pip\footnote{\url{https://pip.pypa.io/en/stable/}} or
+conda\footnote{\url{https://docs.conda.io/en/latest/}} you can install all
+these packages.
 
 \end{document}
